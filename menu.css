@@ -1,0 +1,68 @@
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #FFE8E8 0%, #FFF5E1 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.menu-container {
+    width: 100%;
+    max-width: 900px; /* صندوق أعرض ليناسب المنيو */
+    margin: auto;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column; /* الصورتين فوق بعض */
+    gap: 20px;
+}
+
+.image-gallery img {
+    width: 100%; /* يجعل الصورة بعرض الصندوق */
+    max-width: 800px; /* حجم أقصى لمنعها من أن تكون كبيرة جداً */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.02); /* تأثير بسيط عند تمرير الماوس */
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #FF6B6B;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #E55C5C;
+}
